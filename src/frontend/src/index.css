@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 1 0 0;
+    --foreground: 0.1 0 0;
+    --card: 1 0 0;
+    --card-foreground: 0.1 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.1 0 0;
+    --primary: 0.3 0.13 15;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.95 0.03 15;
+    --secondary-foreground: 0.3 0.13 15;
+    --muted: 0.96 0.01 15;
+    --muted-foreground: 0.5 0 0;
+    --accent: 0.93 0.04 15;
+    --accent-foreground: 0.3 0.13 15;
+    --destructive: 0.3 0.13 15;
+    --destructive-foreground: 1 0 0;
+    --border: 0.88 0.01 15;
+    --input: 0.88 0.01 15;
+    --ring: 0.3 0.13 15;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.1 0 0;
+    --sidebar-primary: 0.3 0.13 15;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.95 0.03 15;
+    --sidebar-accent-foreground: 0.3 0.13 15;
+    --sidebar-border: 0.88 0.01 15;
+    --sidebar-ring: 0.3 0.13 15;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+.font-display {
+  font-family: "Playfair Display", serif;
+}
+
+.veg-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+  border: 1.5px solid #16a34a;
+  flex-shrink: 0;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+.category-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
